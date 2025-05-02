@@ -1,6 +1,7 @@
 # TaskManager Microservice
 
-A simple Task Management Platform to help small teams track tasks within projects, built using Spring Boot, Firestore, Cloud Run, and Cloud Functions.
+Overview
+A cloud-based task management service with Google Cloud integration for efficient task scheduling, tracking, and management.A simple Task Management Platform to help small teams track tasks within projects, built using Spring Boot, Firestore, Cloud Run, and Cloud Functions.
 
 ## Features
 
@@ -16,17 +17,15 @@ A simple Task Management Platform to help small teams track tasks within project
 
 
 ## Setup Instructions
-Task Manager Service
-Overview
-A cloud-based task management service with Google Cloud integration for efficient task scheduling, tracking, and management.
-## Prerequisites
 
+
+# Prerequisites
 - Java JDK 11+
 - Maven 3.6+
 - Git
 - Google Cloud Platform account
 
-Installation
+
 # Clone the repository
 git clone https://github.com/Aman373-Nafiz/Task_Manager.git
 cd taskmanager_service
@@ -315,3 +314,17 @@ This simulates a notification to team members. In a production environment, this
 # Notification
 ![notifications](https://github.com/user-attachments/assets/9fde0fc0-bc14-456e-916c-63e3b405634d)
 
+# Get Function of Project and Task (One Example each)
+![get project list](https://github.com/user-attachments/assets/b91ea9d5-c7de-48d9-809b-f7066806c00e)
+
+![p5](https://github.com/user-attachments/assets/e87c4bf3-8a72-4316-899a-f4d13bf51f8b)
+
+# Post Function of Project and Task (One Example each )
+![Screenshot (103)](https://github.com/user-attachments/assets/a2949d68-dab4-498d-885b-eb4762dae7b7)
+![Screenshot (99)](https://github.com/user-attachments/assets/62232614-8077-4f02-902c-4c85110a131c)
+# Update Function of Project
+![Screenshot (104)](https://github.com/user-attachments/assets/c29375d2-329f-47a9-9b07-cbc37e30ab45)
+
+# CloudFirestore Structure stored data
+![p2](https://github.com/user-attachments/assets/4178c1d3-1362-456b-a4ff-65c49bc4365d)
+![Screenshot (98)](https://github.com/user-attachments/assets/20e3a8b3-e2dd-4131-8454-690477fc43f5)
