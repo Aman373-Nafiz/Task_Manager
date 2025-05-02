@@ -1,6 +1,4 @@
 # TaskManager Microservice
-
-Overview
 A cloud-based task management service with Google Cloud integration for efficient task scheduling, tracking, and management.A simple Task Management Platform to help small teams track tasks within projects, built using Spring Boot, Firestore, Cloud Run, and Cloud Functions.
 
 ## Features
