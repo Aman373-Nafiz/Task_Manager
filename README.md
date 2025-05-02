@@ -310,3 +310,8 @@ This simulates a notification to team members. In a production environment, this
 
 - The application uses UUID for generating IDs for both Projects and Tasks.
 - The TaskNotificationListener simulates notifications via console logging. In a production environment, this could be extended to send emails or other types of notifications.
+
+## ScreenShot
+# Notification
+![notifications](https://github.com/user-attachments/assets/9fde0fc0-bc14-456e-916c-63e3b405634d)
+
