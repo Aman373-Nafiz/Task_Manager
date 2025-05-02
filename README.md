@@ -19,34 +19,34 @@ A simple Task Management Platform to help small teams track tasks within project
 Task Manager Service
 Overview
 A cloud-based task management service with Google Cloud integration for efficient task scheduling, tracking, and management.
-Prerequisites
+## Prerequisites
 
-Java JDK 11+
-Maven 3.6+
-Git
-Google Cloud Platform account
+- Java JDK 11+
+- Maven 3.6+
+- Git
+- Google Cloud Platform account
 
 Installation
-bash# Clone the repository
+# Clone the repository
 git clone https://github.com/Aman373-Nafiz/Task_Manager.git
 cd taskmanager_service
 
 # Build the project
-mvn clean install
-Setup Instructions
-Configuration
-Google Cloud Authentication
+- mvn clean install
+- Setup Instructions
+- Configuration
+- Google Cloud Authentication
 This application requires Google Cloud credentials to function properly. NEVER commit service account credentials to version control.
-bash# Create a directory for credentials (ignored by git)
+# Create a directory for credentials (ignored by git)
 mkdir -p GOOGLE_APPLICATION
-Required Setup:
+# Required Setup:
 
-Create a service account in Google Cloud Console
-Download the service account key (JSON format)
-Place the JSON key file in the GOOGLE_APPLICATION/ directory
-Set the environment variable:
+- Create a service account in Google Cloud Console
+- Download the service account key (JSON format)
+- Place the JSON key file in the GOOGLE_APPLICATION/ directory
+- Set the environment variable:
 
-bash# Linux/MacOS
+# Linux/MacOS
 export GOOGLE_APPLICATION_CREDENTIALS="$PWD/GOOGLE_APPLICATION/your-credentials-file.json"
 
 # Windows (CMD)
@@ -56,14 +56,19 @@ set GOOGLE_APPLICATION_CREDENTIALS=D:\Java\taskmanager_service\GOOGLE_APPLICATIO
 $env:GOOGLE_APPLICATION_CREDENTIALS="D:\Java\taskmanager_service\GOOGLE_APPLICATION\your-credentials-file.json"
 Git Setup for Credentials Security
 Add the following to your .gitignore file:
-bash# Ignore credential files
+# Ignore credential files
 GOOGLE_APPLICATION/*.json
 If you accidentally added credentials to Git tracking:
-bash# Remove credentials from Git tracking without deleting the file
+# Remove credentials from Git tracking without deleting the file
 git rm --cached GOOGLE_APPLICATION/*.json
 
 # Commit the change
 git commit -m "Remove sensitive credentials and update gitignore"
+Running the Application
+# Start the service
+mvn spring-boot:run
+API Documentation
+Access the Swagger UI at http://localhost:8080/swagger-ui.html after starting the application.
 
 ### Prerequisites
 
