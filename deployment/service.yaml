@@ -1,0 +1,16 @@
+apiVersion: serving.knative.dev/v1
+kind: Service
+metadata:
+  name: taskmanager-api
+spec:
+  template:
+    metadata:
+      annotations:
+        autoscaling.knative.dev/maxScale: "1"
+    spec:
+      containers:
+        - image: gcr.io/dogwood-thought-441315-n9-65ef9c3b3c42/taskmanager-api
+          resources:
+            limits:
+              cpu: 1
+              memory: 512Mi
