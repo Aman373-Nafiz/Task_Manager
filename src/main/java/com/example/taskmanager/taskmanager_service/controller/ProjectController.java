@@ -22,7 +22,7 @@ public class ProjectController {
         this.projectService = projectService;
     }
 
-    @PostMapping("/create/{projectID}")
+    @PostMapping("/create")
     public ResponseEntity<ApiResponse<Project>> createProject(@Valid @RequestBody ProjectDto projectDto)
             throws ExecutionException, InterruptedException {
         Project project = projectService.createProject(projectDto);
